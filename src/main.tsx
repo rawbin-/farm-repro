@@ -2,11 +2,16 @@ import React, { useState } from "react";
 import "./main.css";
 import reactLogo from "./assets/react.svg";
 import FarmLogo from "./assets/logo.png";
+import 'dhtmlx-gantt/codebase/dhtmlxgantt.css';
+
+import HighlightKeyword from "./componnets/HighlightKeyword.tsx";
+
 export function Main() {
   const [count, setCount] = useState(0);
 
   return (
     <>
+        <HighlightKeyword></HighlightKeyword>
       <div>
         <a href="https://farmfe.org/" target="_blank">
           <img src={FarmLogo} className="logo" alt="Farm logo" />

@@ -1,10 +1,9 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
+import { render } from 'react-dom';
 import { Main } from './main';
 import './index.css'
 
 
 const container = document.querySelector('#root');
-const root = createRoot(container);
 
-root.render(<Main />);
+render(<Main />,container);
